@@ -10,7 +10,7 @@ import (
 
 // variable start with Camel case to ensure it is accessible outside from the file
 type HTTPServer struct {
-	Addr string
+	Addr string `yaml:"address" env-required:"true"`
 }
 
 // env-default:"production
